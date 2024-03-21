@@ -1,14 +1,19 @@
+
 let container = document.querySelector(".container");
 let numberOfGrids = 64;
-let grid = document.querySelector(".grids");
+
 let buttonEightGrids = document.querySelector("#eight");
 let buttonSixteenGrids = document.querySelector("#sixteen");
 let buttonThirtyTwoGrids = document.querySelector("#thirtytwo");
 let buttonSixtyFourGrids = document.querySelector("#sixtyfour");
+let buttonReset = document.querySelector("#reset");
+
+
 
 
 for (let i = 1; i <= numberOfGrids; i++) {    // for displaying the homepage grid i.e 16 by 16
     createGridsOf16x16();
+    
 }
 
 
@@ -21,7 +26,14 @@ function createGridsOf8x8() {
         createGrid.style.width = "59px";
         createGrid.style.border = "1px solid black";
         createGrid.classList.add("grids");
+        createGrid.addEventListener("mouseover", () => {
+            createGrid.style.backgroundColor = "black";
+        })
         container.appendChild(createGrid);
+        
+        
+
+        
     }
 }
 
@@ -36,6 +48,12 @@ function createGridsOf16x16() {
         createGrid.style.border = "1px solid black";
         createGrid.classList.add("grids");
         container.appendChild(createGrid);
+        createGrid.addEventListener("mouseover", () => {
+            createGrid.style.backgroundColor = "black";
+        })
+
+        
+        
     }
 }
 
@@ -50,6 +68,11 @@ function createGridsOf32x32() {
         createGrid.style.border = "1px solid black";
         createGrid.classList.add("grids");
         container.appendChild(createGrid);
+        createGrid.classList.add("grid32");
+        createGrid.addEventListener("mouseover", () => {
+            createGrid.style.backgroundColor = "black";
+        })
+       
     }
 }
 
@@ -64,7 +87,14 @@ function createGridsOf64x64() {
         createGrid.style.border = "1px solid black";
         createGrid.classList.add("grids");
         container.appendChild(createGrid);
+        createGrid.addEventListener("mouseover", () => {
+            createGrid.style.backgroundColor = "black";
+        })
+        
+
+        
     }
+    
 }
 
 
@@ -72,11 +102,15 @@ function createGridsOf64x64() {
 
 buttonEightGrids.addEventListener("click", () => {
     createGridsOf8x8();
+    
 })
 
 buttonSixteenGrids.addEventListener("click", () => {
     createGridsOf16x16();
+    
+    
 })
+
 
 buttonThirtyTwoGrids.addEventListener("click", () => {
     createGridsOf32x32();
@@ -84,12 +118,33 @@ buttonThirtyTwoGrids.addEventListener("click", () => {
 
 buttonSixtyFourGrids.addEventListener("click", () => {
     createGridsOf64x64();
+    
+    
 })
 
 
 
+// let grid = document.querySelectorAll(".grids");
 
-// hover effect for the grids
-grid.addEventListener("mouseover", () => {
-    grid.style.backgroundColor = "black";
-});
+
+buttonReset.addEventListener("click", () => {
+    let grid = document.querySelectorAll(".grids");
+    if(grid.length === 64) {
+        createGridsOf16x16();
+    }
+    
+    else if(grid.length === 256) {
+        createGridsOf16x16();
+    }
+
+    else if (grid.length === 1024) {
+        createGridsOf32x32();
+    }
+
+    else if (grid.length === 4096) {
+        createGridsOf64x64();
+    }
+})
+
+
+
