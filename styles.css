@@ -23,16 +23,71 @@ h1 {
 
 
 .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     width: 500px;
     height: 500px;
     border: 10px solid #023047;
+    flex-wrap: wrap;
     
 }
 
 
 .button-container {
-    background-color: skyblue;
+    background-color: #023047;
     height: 515px;
-    width: 200px;
+    width: 350px;
+    color: white;
+}
+
+
+label {
+    display: block;
+    padding: 20px;
+    margin-left: 10px;
+}
+button {
+    background-color: #023047;
+    border: 2px solid white;
+    padding: 5px;
+    margin: 10px;
+    color: white;
+    border-radius:  5px;
+    cursor: pointer;
+    width: 130px;
+    height: 50px;
+    transition: 100ms;
+    font-weight: bold;
     
+}
+
+.left-button {
+    margin-left: 30px;
+}
+
+button:hover {
+    background-color: white;
+    color: #023047;
+    font-weight: bold;
+}
+
+button:focus {
+    background-color: white;
+    color: #023047;
+    font-weight: bold;
+}
+
+
+#rand-colour { 
+    margin-top: 55px;
+
+}
+
+.bottom-buttons {
+    width: 280px;
+    margin-left: 30px;
+
+    
+
 }
