@@ -27,7 +27,7 @@ function createGridsOf8x8() {
         createGrid.style.border = "1px solid black";
         createGrid.classList.add("grids");
         createGrid.addEventListener("mouseover", () => {
-            createGrid.style.backgroundColor = "black";
+            createGrid.style.backgroundColor = "#023047";
         })
         container.appendChild(createGrid);
         
@@ -49,7 +49,7 @@ function createGridsOf16x16() {
         createGrid.classList.add("grids");
         container.appendChild(createGrid);
         createGrid.addEventListener("mouseover", () => {
-            createGrid.style.backgroundColor = "black";
+            createGrid.style.backgroundColor = "#023047";
         })
 
         
@@ -70,7 +70,7 @@ function createGridsOf32x32() {
         container.appendChild(createGrid);
         createGrid.classList.add("grid32");
         createGrid.addEventListener("mouseover", () => {
-            createGrid.style.backgroundColor = "black";
+            createGrid.style.backgroundColor = "#023047";
         })
        
     }
@@ -88,7 +88,7 @@ function createGridsOf64x64() {
         createGrid.classList.add("grids");
         container.appendChild(createGrid);
         createGrid.addEventListener("mouseover", () => {
-            createGrid.style.backgroundColor = "black";
+            createGrid.style.backgroundColor = "#023047";
         })
         
 
@@ -148,3 +148,17 @@ buttonReset.addEventListener("click", () => {
 
 
 
+let r = Math.floor(Math.random() * 256);
+let g = Math.floor(Math.random() * 256);
+let b = Math.floor(Math.random() * 256);
+
+function randomColor() {
+    return `rgb(${r},${g},${b})`;
+}
+
+
+let randomColorButton = document.querySelector("#rand-button");
+randomColorButton.addEventListener("click" , () => {
+    
+    
+})
