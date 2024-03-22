@@ -23,6 +23,7 @@ h1 {
 
 
 .container {
+    
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -35,6 +36,7 @@ h1 {
 
 
 .button-container {
+    
     background-color: #023047;
     height: 515px;
     width: 350px;
@@ -48,9 +50,11 @@ label {
     margin-left: 10px;
 }
 button {
+    font-family: pacifico,'Times New Roman', Times, serif;
     background-color: #023047;
     border: 2px solid white;
-    padding: 5px;
+    padding: 8px;
+    font-size: 18px;
     margin: 10px;
     color: white;
     border-radius:  5px;
@@ -58,7 +62,8 @@ button {
     width: 130px;
     height: 50px;
     transition: 100ms;
-    font-weight: bold;
+    font-weight: 200;
+
     
 }
 
@@ -69,7 +74,7 @@ button {
 button:hover {
     background-color: white;
     color: #023047;
-    font-weight: bold;
+    font-weight: 200;
 }
 
 button:focus {
@@ -85,9 +90,13 @@ button:focus {
 }
 
 .bottom-buttons {
+    cursor:cell;
     width: 280px;
+    height: 70px;
     margin-left: 30px;
+    margin-top: 20px;
 
     
 
 }
+
