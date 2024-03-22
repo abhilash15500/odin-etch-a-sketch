@@ -9,6 +9,15 @@ let buttonSixtyFourGrids = document.querySelector("#sixtyfour");
 let buttonReset = document.querySelector("#reset");
 
 
+let randomColorButton = document.querySelector("#rand-colour");
+let randomColorButtonEvent = randomColorButton.addEventListener("click" , () => {
+    randomColor;
+    
+    
+})
+
+
+
 
 
 for (let i = 1; i <= numberOfGrids; i++) {    // for displaying the homepage grid i.e 16 by 16
@@ -27,8 +36,9 @@ function createGridsOf8x8() {
         createGrid.style.border = "1px solid black";
         createGrid.classList.add("grids");
         createGrid.addEventListener("mouseover", () => {
-            createGrid.style.backgroundColor = "#023047";
+            createGrid.style.backgroundColor = `${randomColor()}`;
         })
+
         container.appendChild(createGrid);
         
         
@@ -90,6 +100,8 @@ function createGridsOf64x64() {
         createGrid.addEventListener("mouseover", () => {
             createGrid.style.backgroundColor = "#023047";
         })
+
+        
         
 
         
@@ -154,11 +166,12 @@ let b = Math.floor(Math.random() * 256);
 
 function randomColor() {
     return `rgb(${r},${g},${b})`;
+
+    
+    
 }
 
 
-let randomColorButton = document.querySelector("#rand-button");
-randomColorButton.addEventListener("click" , () => {
-    
-    
-})
+
+
+
