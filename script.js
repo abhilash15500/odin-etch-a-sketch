@@ -26,8 +26,8 @@ function createGridsOf8x8() {
 
     for (let i = 0; i < numberOfGrids; i++) {
         let createGrid = document.createElement("div");
-        createGrid.style.height = "59px";
-        createGrid.style.width = "59px";
+        createGrid.style.height = "60.1px";
+        createGrid.style.width = "60.1px";
         createGrid.style.border = "1px solid black";
         createGrid.classList.add("grids");
         createGrid.addEventListener("mouseover", () => {
@@ -44,8 +44,8 @@ function createRgbGridsOf8x8() {
     
     for (let i = 0; i < numberOfGrids; i++) {
         let createGrid = document.createElement("div");
-        createGrid.style.height = "59px";
-        createGrid.style.width = "59px";
+        createGrid.style.height = "60.1px";
+        createGrid.style.width = "60.1px";
         createGrid.style.border = "1px solid black";
         createGrid.classList.add("grids");
         createGrid.addEventListener("mouseover", () => {
@@ -64,8 +64,8 @@ function createGridsOf16x16() {
 
     for (let i = 0; i < numberOfGrids; i++) {
         let createGrid = document.createElement("div");
-        createGrid.style.height = "28px";
-        createGrid.style.width = "28px";
+        createGrid.style.height = "30.05px";
+        createGrid.style.width = "30.05px";
         createGrid.style.border = "1px solid black";
         createGrid.classList.add("grids");
         container.appendChild(createGrid);
@@ -82,8 +82,8 @@ function createRgbGridsOf16x16() {
 
     for (let i = 0; i < numberOfGrids; i++) {
         let createGrid = document.createElement("div");
-        createGrid.style.height = "28px";
-        createGrid.style.width = "28px";
+        createGrid.style.height = "30.05px";
+        createGrid.style.width = "30.05px";
         createGrid.style.border = "1px solid black";
         createGrid.classList.add("grids");
         container.appendChild(createGrid);
@@ -102,8 +102,8 @@ function createGridsOf32x32() {
     numberOfGrids = 1024;
     for (let i = 0; i < numberOfGrids; i++) {
         let createGrid = document.createElement("div");
-        createGrid.style.height = "14px";
-        createGrid.style.width = "14px";
+        createGrid.style.height = "15.02px";
+        createGrid.style.width = "15.02px";
         createGrid.style.border = "1px solid black";
         createGrid.classList.add("grids");
         container.appendChild(createGrid);
@@ -121,8 +121,8 @@ function createRgbGridsOf32x32() {
     numberOfGrids = 1024;
     for (let i = 0; i < numberOfGrids; i++) {
         let createGrid = document.createElement("div");
-        createGrid.style.height = "14px";
-        createGrid.style.width = "14px";
+        createGrid.style.height = "15.02px";
+        createGrid.style.width = "15.02px";
         createGrid.style.border = "1px solid black";
         createGrid.classList.add("grids");
         container.appendChild(createGrid);
@@ -141,8 +141,8 @@ function createGridsOf64x64() {
     numberOfGrids = 4096;
     for (let i = 0; i < numberOfGrids; i++) {
         let createGrid = document.createElement("div");
-        createGrid.style.height = "6.1px";
-        createGrid.style.width = "6.1px";
+        createGrid.style.height = "7.5px";
+        createGrid.style.width = "7.5px";
         createGrid.style.border = "1px solid black";
         createGrid.classList.add("grids");
         container.appendChild(createGrid);
@@ -159,8 +159,8 @@ function createRgbGridsOf64x64() {
     numberOfGrids = 4096;
     for (let i = 0; i < numberOfGrids; i++) {
         let createGrid = document.createElement("div");
-        createGrid.style.height = "6.1px";
-        createGrid.style.width = "6.1px";
+        createGrid.style.height = "7.5";
+        createGrid.style.width = "7.5px";
         createGrid.style.border = "1px solid black";
         createGrid.classList.add("grids");
         container.appendChild(createGrid);
@@ -244,4 +244,3 @@ let randomColorButtonEvent = randomColorButton.addEventListener("click", () => {
     else if(document.querySelectorAll(".grids").length  === 4096)
     createRgbGridsOf64x64();
 })
-
