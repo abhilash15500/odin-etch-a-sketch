@@ -102,8 +102,8 @@ function createGridsOf32x32() {
     numberOfGrids = 1024;
     for (let i = 0; i < numberOfGrids; i++) {
         let createGrid = document.createElement("div");
-        createGrid.style.height = "13.5px";
-        createGrid.style.width = "13.5px";
+        createGrid.style.height = "14px";
+        createGrid.style.width = "14px";
         createGrid.style.border = "1px solid black";
         createGrid.classList.add("grids");
         container.appendChild(createGrid);
@@ -121,8 +121,8 @@ function createRgbGridsOf32x32() {
     numberOfGrids = 1024;
     for (let i = 0; i < numberOfGrids; i++) {
         let createGrid = document.createElement("div");
-        createGrid.style.height = "13.5px";
-        createGrid.style.width = "13.5px";
+        createGrid.style.height = "14px";
+        createGrid.style.width = "14px";
         createGrid.style.border = "1px solid black";
         createGrid.classList.add("grids");
         container.appendChild(createGrid);
@@ -141,8 +141,8 @@ function createGridsOf64x64() {
     numberOfGrids = 4096;
     for (let i = 0; i < numberOfGrids; i++) {
         let createGrid = document.createElement("div");
-        createGrid.style.height = "6px";
-        createGrid.style.width = "6px";
+        createGrid.style.height = "6.1px";
+        createGrid.style.width = "6.1px";
         createGrid.style.border = "1px solid black";
         createGrid.classList.add("grids");
         container.appendChild(createGrid);
@@ -159,8 +159,8 @@ function createRgbGridsOf64x64() {
     numberOfGrids = 4096;
     for (let i = 0; i < numberOfGrids; i++) {
         let createGrid = document.createElement("div");
-        createGrid.style.height = "6px";
-        createGrid.style.width = "6px";
+        createGrid.style.height = "6.1px";
+        createGrid.style.width = "6.1px";
         createGrid.style.border = "1px solid black";
         createGrid.classList.add("grids");
         container.appendChild(createGrid);
