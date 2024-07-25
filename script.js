@@ -106,8 +106,8 @@ function createGridsOf32x32() {
     numberOfGrids = 1024;
     for (let i = 0; i < numberOfGrids; i++) {
         let createGrid = document.createElement("div");
-        createGrid.style.height = "15.62px";
-        createGrid.style.width = "15.62px";
+        createGrid.style.height = "15.625px";
+        createGrid.style.width = "15.625px";
         createGrid.style.boxSizing = "border-box"
         createGrid.style.border = "1px solid black";
         createGrid.classList.add("grids");
@@ -126,8 +126,8 @@ function createRgbGridsOf32x32() {
     numberOfGrids = 1024;
     for (let i = 0; i < numberOfGrids; i++) {
         let createGrid = document.createElement("div");
-        createGrid.style.height = "15.62px";
-        createGrid.style.width = "15.62px";
+        createGrid.style.height = "15.625px";
+        createGrid.style.width = "15.625px";
         createGrid.style.boxSizing = "border-box"
         createGrid.style.border = "1px solid black";
         createGrid.classList.add("grids");
@@ -147,8 +147,8 @@ function createGridsOf64x64() {
     numberOfGrids = 4096;
     for (let i = 0; i < numberOfGrids; i++) {
         let createGrid = document.createElement("div");
-        createGrid.style.height = "7.77px";
-        createGrid.style.width = "7.77px";
+        createGrid.style.height = "7.8125px";
+        createGrid.style.width = "7.8125px";
         createGrid.style.boxSizing = "border-box"
         createGrid.style.border = "1px solid black";
         createGrid.classList.add("grids");
@@ -166,8 +166,8 @@ function createRgbGridsOf64x64() {
     numberOfGrids = 4096;
     for (let i = 0; i < numberOfGrids; i++) {
         let createGrid = document.createElement("div");
-        createGrid.style.height = "7.77px";
-        createGrid.style.width = "7.77px";
+        createGrid.style.height = "7.8125px";
+        createGrid.style.width = "7.8125px";
         createGrid.style.boxSizing = "border-box"
         createGrid.style.border = "1px solid black";
         createGrid.classList.add("grids");
