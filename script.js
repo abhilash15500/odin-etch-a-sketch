@@ -26,9 +26,10 @@ function createGridsOf8x8() {
 
     for (let i = 0; i < numberOfGrids; i++) {
         let createGrid = document.createElement("div");
-        createGrid.style.height = "60.1px";
-        createGrid.style.width = "60.1px";
+        createGrid.style.height = "62.5px";
+        createGrid.style.width = "62.5px";
         createGrid.style.border = "1px solid black";
+        createGrid.style.boxSizing = "border-box";
         createGrid.classList.add("grids");
         createGrid.addEventListener("mouseover", () => {
         createGrid.style.backgroundColor = "#023047"; // Default color for non-"rgb" mode
@@ -44,8 +45,9 @@ function createRgbGridsOf8x8() {
     
     for (let i = 0; i < numberOfGrids; i++) {
         let createGrid = document.createElement("div");
-        createGrid.style.height = "60.1px";
-        createGrid.style.width = "60.1px";
+        createGrid.style.height = "62.5px";
+        createGrid.style.width = "62.5px";
+        createGrid.style.boxSizing = "border-box";
         createGrid.style.border = "1px solid black";
         createGrid.classList.add("grids");
         createGrid.addEventListener("mouseover", () => {
@@ -64,8 +66,9 @@ function createGridsOf16x16() {
 
     for (let i = 0; i < numberOfGrids; i++) {
         let createGrid = document.createElement("div");
-        createGrid.style.height = "30.05px";
-        createGrid.style.width = "30.05px";
+        createGrid.style.height = "31.25px";
+        createGrid.style.width = "31.25px";
+        createGrid.style.boxSizing = "border-box";
         createGrid.style.border = "1px solid black";
         createGrid.classList.add("grids");
         container.appendChild(createGrid);
@@ -82,8 +85,9 @@ function createRgbGridsOf16x16() {
 
     for (let i = 0; i < numberOfGrids; i++) {
         let createGrid = document.createElement("div");
-        createGrid.style.height = "30.05px";
-        createGrid.style.width = "30.05px";
+        createGrid.style.height = "31.25px";
+        createGrid.style.width = "31.25px";
+        createGrid.style.boxSizing = "border-box";
         createGrid.style.border = "1px solid black";
         createGrid.classList.add("grids");
         container.appendChild(createGrid);
@@ -102,8 +106,9 @@ function createGridsOf32x32() {
     numberOfGrids = 1024;
     for (let i = 0; i < numberOfGrids; i++) {
         let createGrid = document.createElement("div");
-        createGrid.style.height = "15.02px";
-        createGrid.style.width = "15.02px";
+        createGrid.style.height = "15.62px";
+        createGrid.style.width = "15.62px";
+        createGrid.style.boxSizing = "border-box"
         createGrid.style.border = "1px solid black";
         createGrid.classList.add("grids");
         container.appendChild(createGrid);
@@ -121,8 +126,9 @@ function createRgbGridsOf32x32() {
     numberOfGrids = 1024;
     for (let i = 0; i < numberOfGrids; i++) {
         let createGrid = document.createElement("div");
-        createGrid.style.height = "15.02px";
-        createGrid.style.width = "15.02px";
+        createGrid.style.height = "15.62px";
+        createGrid.style.width = "15.62px";
+        createGrid.style.boxSizing = "border-box"
         createGrid.style.border = "1px solid black";
         createGrid.classList.add("grids");
         container.appendChild(createGrid);
@@ -141,8 +147,9 @@ function createGridsOf64x64() {
     numberOfGrids = 4096;
     for (let i = 0; i < numberOfGrids; i++) {
         let createGrid = document.createElement("div");
-        createGrid.style.height = "7.5px";
-        createGrid.style.width = "7.5px";
+        createGrid.style.height = "7.77px";
+        createGrid.style.width = "7.77px";
+        createGrid.style.boxSizing = "border-box"
         createGrid.style.border = "1px solid black";
         createGrid.classList.add("grids");
         container.appendChild(createGrid);
@@ -159,8 +166,9 @@ function createRgbGridsOf64x64() {
     numberOfGrids = 4096;
     for (let i = 0; i < numberOfGrids; i++) {
         let createGrid = document.createElement("div");
-        createGrid.style.height = "7.5";
-        createGrid.style.width = "7.5px";
+        createGrid.style.height = "7.77px";
+        createGrid.style.width = "7.77px";
+        createGrid.style.boxSizing = "border-box"
         createGrid.style.border = "1px solid black";
         createGrid.classList.add("grids");
         container.appendChild(createGrid);
