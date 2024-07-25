@@ -26,8 +26,8 @@ function createGridsOf8x8() {
 
     for (let i = 0; i < numberOfGrids; i++) {
         let createGrid = document.createElement("div");
-        createGrid.style.height = "62.5px";
-        createGrid.style.width = "62.5px";
+        createGrid.style.height = "calc(100%/8)";
+        createGrid.style.width = "calc(100%/8)";
         createGrid.style.border = "1px solid black";
         createGrid.style.boxSizing = "border-box";
         createGrid.classList.add("grids");
@@ -45,8 +45,8 @@ function createRgbGridsOf8x8() {
     
     for (let i = 0; i < numberOfGrids; i++) {
         let createGrid = document.createElement("div");
-        createGrid.style.height = "62.5px";
-        createGrid.style.width = "62.5px";
+        createGrid.style.height = "calc(100%/8)";
+        createGrid.style.width = "calc(100%/8)";
         createGrid.style.boxSizing = "border-box";
         createGrid.style.border = "1px solid black";
         createGrid.classList.add("grids");
@@ -66,8 +66,8 @@ function createGridsOf16x16() {
 
     for (let i = 0; i < numberOfGrids; i++) {
         let createGrid = document.createElement("div");
-        createGrid.style.height = "31.25px";
-        createGrid.style.width = "31.25px";
+        createGrid.style.height = "calc(100%/16)";
+        createGrid.style.width = "calc(100%/16)";
         createGrid.style.boxSizing = "border-box";
         createGrid.style.border = "1px solid black";
         createGrid.classList.add("grids");
@@ -85,8 +85,8 @@ function createRgbGridsOf16x16() {
 
     for (let i = 0; i < numberOfGrids; i++) {
         let createGrid = document.createElement("div");
-        createGrid.style.height = "31.25px";
-        createGrid.style.width = "31.25px";
+        createGrid.style.height = "calc(100%/16)";
+        createGrid.style.width = "calc(100%/16)";
         createGrid.style.boxSizing = "border-box";
         createGrid.style.border = "1px solid black";
         createGrid.classList.add("grids");
@@ -106,8 +106,8 @@ function createGridsOf32x32() {
     numberOfGrids = 1024;
     for (let i = 0; i < numberOfGrids; i++) {
         let createGrid = document.createElement("div");
-        createGrid.style.height = "15.625px";
-        createGrid.style.width = "15.625px";
+        createGrid.style.height = "calc(100%/32)";
+        createGrid.style.width = "calc(100%/32)";
         createGrid.style.boxSizing = "border-box"
         createGrid.style.border = "1px solid black";
         createGrid.classList.add("grids");
@@ -126,8 +126,8 @@ function createRgbGridsOf32x32() {
     numberOfGrids = 1024;
     for (let i = 0; i < numberOfGrids; i++) {
         let createGrid = document.createElement("div");
-        createGrid.style.height = "15.625px";
-        createGrid.style.width = "15.625px";
+        createGrid.style.height = "calc(100%/32)";
+        createGrid.style.width = "calc(100%/32)";
         createGrid.style.boxSizing = "border-box"
         createGrid.style.border = "1px solid black";
         createGrid.classList.add("grids");
@@ -147,8 +147,8 @@ function createGridsOf64x64() {
     numberOfGrids = 4096;
     for (let i = 0; i < numberOfGrids; i++) {
         let createGrid = document.createElement("div");
-        createGrid.style.height = "7.8125px";
-        createGrid.style.width = "7.8125px";
+        createGrid.style.height = "calc(100%/64)";
+        createGrid.style.width = "calc(100%/64)";
         createGrid.style.boxSizing = "border-box"
         createGrid.style.border = "1px solid black";
         createGrid.classList.add("grids");
@@ -166,8 +166,8 @@ function createRgbGridsOf64x64() {
     numberOfGrids = 4096;
     for (let i = 0; i < numberOfGrids; i++) {
         let createGrid = document.createElement("div");
-        createGrid.style.height = "7.8125px";
-        createGrid.style.width = "7.8125px";
+        createGrid.style.height = "calc(100%/64)";
+        createGrid.style.width = "calc(100%/64)";
         createGrid.style.boxSizing = "border-box"
         createGrid.style.border = "1px solid black";
         createGrid.classList.add("grids");
