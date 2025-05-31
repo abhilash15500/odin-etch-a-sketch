@@ -2,4 +2,4 @@
 Learnt about DOM manipulation,events,event listener,functions and writing clean code in this project!!! :)
 
 
-live link - https://abhilash15500.github.io/odin-etch-a-sketch/
+live link - https://xplozion15.github.io/odin-etch-a-sketch/
